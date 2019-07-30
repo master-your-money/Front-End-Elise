@@ -5,9 +5,8 @@ import {
 } from '../actions';
 
 const initialState =  {
-    loggingIn: '',
-    name: '',
-    password: '',
+    loggingIn: false,
+    token: localStorage.getItem('token'),
     error: ''
 }
 
@@ -16,25 +15,20 @@ export const loginReducer = (state = initialState, action) => {
         case LOGIN_START:
             return {
                 ...state,
-                loggingIn: 'true',
-                name: '',
-                password: '',
+                loggingIn: true,
                 error: ''
             }
         case LOGIN_SUCCESS:
             return {
                 ...state,
-                loggingIn: 'false',
-                name: '',
-                password: '',
+                loggingIn: false,
+                token: action.payload,
                 error: ''
             }
         case LOGIN_FAILURE:
             return {
                 ...state,
-                loggingIn:'false',
-                name: '',
-                password: '',
+                loggingIn:false,
                 error: action.payload
             }
         

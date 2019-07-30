@@ -1,9 +1,11 @@
+import {
+    REGISTER_START,
+    REGISTER_SUCCESS,
+    REGISTER_FAILURE
+} from '../reducers';
 
 const initialState = {
-    firstName: '',
-    lastName: '',
-    password: '',
-    email: '',
+    registerCreate: false,
     error: ''
 }
 
@@ -12,28 +14,19 @@ export const registerReducer = (state = initialState, action) => {
         case REGISTER_START:
         return{
                 ...state,
-                firstName: '',
-                lastName: '',
-                password: '',
-                email:'',
+                registerCreate: true,
                 error: ''
             }
         case REGISTER_SUCCESS:
         return{
             ...state,
-                firstName: '',
-                lastName: '',
-                password: '',
-                email:'',
+                registerCreate: false,
                 error: ''
         }
         case REGISTER_FAILURE:
         return{
             ...state,
-            firstName: '',
-            lastName: '',
-            password: '',
-            email: '',
+            registerCreate: false,
             error: action.payload
         }
         default: 
