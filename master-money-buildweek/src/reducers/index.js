@@ -4,6 +4,6 @@ import { registerReducer } from './registerReducer';
 
 
 export default combineReducers({
-    loginReducer,
-    registerReducer
+    login:loginReducer,
+    register:registerReducer
 })
