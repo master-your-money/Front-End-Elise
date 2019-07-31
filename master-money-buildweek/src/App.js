@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import MemberList from './components/CardList'
+import { Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <MemberList />
+      <Route exact path="/" component={MemberList} />
     </div>
   );
 }

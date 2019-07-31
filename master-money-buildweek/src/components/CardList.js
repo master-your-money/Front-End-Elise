@@ -17,9 +17,9 @@ export default function MemberList() {
         axios
             .get(`http://localhost:5000/api/data/`)
             .then(data => {
-                // console.log(data)
-                // setMember([...data.data]);
-                // console.log(member)
+                console.log(data)
+                setMember([...data.data]);
+                console.log(member)
             })
             .catch(error => {
                 console.log('Error occurred -->', error);
@@ -29,7 +29,7 @@ export default function MemberList() {
 
     return (
         <PageWrapper>
-            {member.map((char, i) => <Person props={char} key={i} />)}
+            {member.map(char, i) => <Person props={char} key={i} />)}
         </PageWrapper>
     );
 
