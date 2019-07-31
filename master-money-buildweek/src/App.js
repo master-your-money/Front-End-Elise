@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
-import RegForm from './components/regForm';
-
-
+import MemberList from './components/CardList'
 
 function App() {
   return (
     <div className="App">
-      <h1>Master That Money </h1>
-      <RegForm />
+      <MemberList />
     </div>
   );
 }
