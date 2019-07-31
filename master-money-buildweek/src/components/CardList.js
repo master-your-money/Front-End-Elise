@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const PageWrapper = styled.div`
     display: flex;
-    flex-flow: wrap;
+    flex-flow: wrap column;
     justify-content: space-between;
 `;
 
@@ -29,7 +29,7 @@ export default function MemberList() {
 
     return (
         <PageWrapper>
-            {member.map(char, i) => <Person props={char} key={i} />)}
+            {member.map((char, i) => <Person props={char} key={i} />)}
         </PageWrapper>
     );
 
