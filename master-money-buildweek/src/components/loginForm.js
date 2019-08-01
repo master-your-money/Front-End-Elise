@@ -9,7 +9,7 @@ class loginForm extends Component {
 		password: ''
 	};
 
-	handleChnages = (e) => {
+	handleChanges = (e) => {
 		this.setState({
 			[e.target.name]: e.target.value
 		});
@@ -27,12 +27,12 @@ class loginForm extends Component {
 					<input
 						type="text"
 						name="username"
-						onChange={this.handleChnages}
+						onChange={this.handleChanges}
 						value={this.state.username}
 						placeholder="Username"
 					/>
 
-					<input type="password" name="password" onChange={this.handleChnages} placeholder="Password" />
+					<input type="password" name="password" onChange={this.handleChanges} placeholder="Password" />
 
 					<button type="submit">Login</button>
 				</form>
