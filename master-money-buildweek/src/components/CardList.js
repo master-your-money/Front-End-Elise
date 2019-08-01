@@ -29,6 +29,7 @@ export default function MemberList() {
 
     return (
         <PageWrapper>
+            <h3>Users</h3>
             {member.map((char, i) => <Person props={char} key={i} />)}
         </PageWrapper>
     );

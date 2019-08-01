@@ -3,10 +3,12 @@ import styled from 'styled-components';
 
 const Info = styled.div`
     border: 1px solid;
-    width: 100px;
+    width: 400px;
     margin: auto;
     justify-content: center;
     margin-bottom: 10px;
+    text-align: -webkit-left;
+
 `;
 
 const Person = ({ props }) => {
@@ -23,7 +25,6 @@ const Person = ({ props }) => {
 
     return (
         <div className="wrapper">
-            <h2>Users</h2>
             <Info className="person-card">
                 <h2>User ID : {props.user_id}</h2>
                 <h2>First Name: {props.firstname}</h2>
