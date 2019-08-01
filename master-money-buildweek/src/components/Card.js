@@ -12,20 +12,26 @@ const Info = styled.div`
 const Person = ({ props }) => {
 
 
-    // annual_income: 57
-    // expensies: 6000
-    // region: "West"
-    // yaer: 2019
+    // "id": 1,
+    // "user_id": 1,
+    // "firstname": "friend",
+    // "lastname": "pal",
+    // "location": "neverland",
+    // "website": "startup.io",
+    // "bio": "once again in neverland",
+    // "completed": false
 
     return (
         <div className="wrapper">
+            <h2>Users</h2>
             <Info className="person-card">
-                <h2>User ID : {props.id}</h2>
-                <h2>Profile ID : {props.profile_id}</h2>
-                <h2>Annual Income: {props.Income}</h2>
-                <h2>Expenditure : {props.Expenditure}</h2>
-                <h2>Region : {props.Region}</h2>
-                <h2>completed : {props.completed}</h2>
+                <h2>User ID : {props.user_id}</h2>
+                <h2>First Name: {props.firstname}</h2>
+                <h2>Last Name: {props.lastname}</h2>
+                <h2>Location : {props.location}</h2>
+                <h2>Website : {props.website}</h2>
+                <h2>Bio : {props.bio}</h2>
+                <h2>Completed : {props.completed}</h2>
             </Info>
         </div>
     );

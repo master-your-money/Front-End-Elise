@@ -15,7 +15,7 @@ export default function MemberList() {
     useEffect(() => {
 
         axios
-            .get(`http://master-your-money.herokuapp.com/home/budget`) // new api by backend
+            .get(`http://master-your-money.herokuapp.com/home/user`) // new api by backend for users
             .then(data => {
                 console.log(data)
                 setMember([...data.data]);
