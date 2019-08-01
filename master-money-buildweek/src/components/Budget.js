@@ -8,7 +8,6 @@ const Info = styled.div`
     justify-content: center;
     margin-bottom: 10px;
     text-align: -webkit-left;
-    color: #adde39;
 `;
 
 const Budget = ({ props }) => {
