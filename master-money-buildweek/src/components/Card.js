@@ -20,10 +20,12 @@ const Person = ({ props }) => {
     return (
         <div className="wrapper">
             <Info className="person-card">
-                <h2>Year : {props.yaer}</h2>
-                <h2>Region : {props.region}</h2>
-                <h2>Annual Income: {props.annual_income}</h2>
-                <h2>Expensies : {props.expensies}</h2>
+                <h2>User ID : {props.id}</h2>
+                <h2>Profile ID : {props.profile_id}</h2>
+                <h2>Annual Income: {props.Income}</h2>
+                <h2>Expenditure : {props.Expenditure}</h2>
+                <h2>Region : {props.Region}</h2>
+                <h2>completed : {props.completed}</h2>
             </Info>
         </div>
     );
