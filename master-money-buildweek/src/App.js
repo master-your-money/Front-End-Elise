@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 import RegForm from './components/RegForm';
 import LoginForm from './components/LoginForm';
 import { Route } from 'react-router-dom';
